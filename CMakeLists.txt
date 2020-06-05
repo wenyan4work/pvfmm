@@ -7,6 +7,7 @@ project(
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_EXTENSIONS OFF)
+include(GNUInstallDirs)
 
 # compiler flags
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
