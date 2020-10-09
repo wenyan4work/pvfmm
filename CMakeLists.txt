@@ -39,7 +39,9 @@ else()
   find_package(LAPACK REQUIRED)
   find_package(FFTW REQUIRED)
   set(DEP_INC ${FFTW_INCLUDE_DIRS})
-  set(DEP_LIB ${FFTW_FLOAT_LIB} ${FFTW_DOUBLE_LIB} ${BLAS_LIBRARIES}
+  set(DEP_LIB ${FFTW_FLOAT_OPENMP_LIB} ${FFTW_FLOAT_LIB}
+              ${FFTW_DOUBLE_OPENMP_LIB} ${FFTW_DOUBLE_LIB} 
+              ${BLAS_LIBRARIES}
               ${LAPACK_LIBRARIES})
 endif()
 
